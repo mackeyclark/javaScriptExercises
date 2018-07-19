@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/Javascript" src="displayEvents.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Sample</h1>
+            <form name="evenDog" onsubmit="return validateItems();" class="form-inline">
+                <div class="form-group">
+                    <label for="num1">Starting Number</label>
+                    <input type="number" class="form-control" id="num1">
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label for="num2">Ending Number</label>
+                    <input type="number" class="form-control" id="num2">
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label for="num3">Step</label>
+                    <input type="number" class="form-control" id="num3">
+                </div>
+                <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+            </form>
+            Here are the even numbers between <span id="num1"></span> and <span id="num2"></span> by <span id="num3"></span>'s:
+            <ul>
+            </ul>
+        </div>
+    </body>
+</html>
